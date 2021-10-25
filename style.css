@@ -4,28 +4,77 @@
   padding: 0;
 }
 
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Typography */
-a {
+.link {
   text-decoration: none;
   color: black;
+}
+
+.link-about,
+.link-store,
+.link-button {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Global Styles */
 .container {
   width: 100%;
-  border: 1px solid black;
 }
 
 /* Header */
-.nav-links {
-  list-style: none;
-  border: 1px solid green;
+.nav-container {
+  padding: 6px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.left,
+.left {
+  padding: 6px;
+}
+.link-about,
+.link-store {
+  margin-right: 5px;
+  padding: 5px;
+}
+.link-about {
+  margin-bottom: 15px;
+}
 .right {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-first,
+.right-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-first {
+  padding-right: 15px;
+}
+.link-gmail,
+.link-images {
+  padding-left: 15px;
+}
+.link-symbol {
+  padding: 8px;
+}
+.link-button {
+  outline: none;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 8px;
+  padding: 9px 23px;
+  color: #fff;
+  background: #1a73e8;
+  border-radius: 4px;
 }
