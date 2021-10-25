@@ -4,8 +4,28 @@
   padding: 0;
 }
 
-/* Layout */
+/* Typography */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Global Styles */
 .container {
   width: 100%;
   border: 1px solid black;
+}
+
+/* Header */
+.nav-links {
+  list-style: none;
+  border: 1px solid green;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  display: flex;
 }
